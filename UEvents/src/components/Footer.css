@@ -1,0 +1,137 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 64px 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      padding: 0 20px 100px;
+    }
+  }
+  
+  .container {
+    width: 100%;
+    /* max-width: 1075px; */
+  }
+  
+  .content {
+    display: flex;
+    /* gap: 90px; */
+    justify-content: space-between;
+    padding: 0 2vw;
+  }
+  
+  @media (max-width: 991px) {
+    .content {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .columnTitle {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  
+  .columnList {
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.7984;
+    list-style: none;  /* Remove bullet points */
+    padding-left: 0;   /* Remove default padding */
+  }
+  
+  .columnList .link {
+    color: #fff;  /* Change link color to white */
+    text-decoration: none;  /* Remove underline from links */
+    transition: color 0.3s ease;  /* Add transition for hover effect */
+  }
+  
+  .columnList .link:hover {
+    color: #ccc;  /* Change link color on hover */
+  }
+  
+  .clickableItem {
+    cursor: pointer;
+  }
+  
+  .divider {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 1px;
+    width: 100%;
+    margin: 76px 0 38px;
+  }
+  
+  @media (max-width: 991px) {
+    .divider {
+      margin-top: 40px;
+    }
+  }
+  
+  .bottomSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.5vw;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .socialLink {
+    text-decoration: none;
+  }
+  
+  .iconCircle {
+    background-color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .iconCircle i {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .iconCircle:hover {
+    background-color: red;
+    transform: scale(1.1);
+  }
+  
